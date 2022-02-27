@@ -7,7 +7,9 @@
     <meta name="author" content="alemorales11">
     <meta name="description" content="Prueba tecnica">
     <title>UnionHub</title>
+    <link rel="shortcut icon" href="./multimedia/solvente.svg" />
     <link rel="stylesheet" href="../styles/estilo.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
     
@@ -16,27 +18,21 @@
 <title>CSS Navigation</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body  class="homecolor" id="body">
 <header>
-    <div id="abc">
-        <div class="div_container">
-            <nav class="container_nav">
-                <li class="container_nav_li">
-                    <a href="#">Union</a>
-                    <a class="blue" href="#">HUB</a>
-                </li>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#gallery">GALLERY</a></li>
-                    <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#pricing">PRICING</a></li>
-                    <li><a href="#contact">CONTACTS</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
+          <ul class="topnav" id="myTopnav">
+                    <a href="#" onclick="myFunction()" class="active">Union Hub</a>
+                    <a href="#" onclick="myFunction()">HOME</a>
+                    <a href="#about" onclick="myFunction()">ABOUT</a>
+                    <a href="#gallery" onclick="myFunction()">GALLERY</a>
+                    <a href="#services" onclick="myFunction()">SERVICES</a>
+                    <a href="#pricing" onclick="myFunction()">PRICING</a>
+                    <a href="#contact" onclick="myFunction()">CONTACTS</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars">MAS</i>
+                    </a>
+          </ul>
+</header>                
 
 <main id="home">
     <section class="home_container">
@@ -56,11 +52,11 @@
             <div class="about_container_inf">
                 <p class="title">We're Creative CoworKing Working Space For Sucsess</p>
             </div>
-            <div class="parrafo about_container_inf">
+            <div class="parrafo confg1 about_container_inf">
                 <p>Coworking is not only about the physucal place, but about establishing the coworking community first. Its benefits can alredy be experienced outside of its place, and it is recommended.</p>
                 <p>To start with building a coworking community first before considering opening a Coworking place</p>
             </div>
-            <div class="parrafo about_container_inf">
+            <div class="parrafo confg2 about_container_inf">
                 <p>However, some coworking places don't build a community: they just get a part of an existing one by combining their opening with</p>
                 <p>An event which attracts their target group. Real-estate centric coworking spaces are about selling desk first, with building community as a secondary goal</p>
             </div>
@@ -217,6 +213,8 @@
         </button>
     </div>
 </footer>
+<script src="../logic/manu.js">
+</script>
 </body>
 </html>
 
